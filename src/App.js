@@ -74,7 +74,7 @@ function App() {
           setQuery("");
           if (result.cod === "404") {
             setErrorMessage(
-              "You enter wrong city or country, please try again"
+              "Incorrect city or country, please enter a valid city or country.."
             );
           } else {
             let currentTime = result.dt;
@@ -188,7 +188,9 @@ function App() {
             </div>
           </div>
         ) : (
-          <div>{errorMessage && <p className="error"> {errorMessage} </p>}</div>
+          <div className="error-box">
+            {errorMessage && <p className="error"> {errorMessage} </p>}
+          </div>
         )}
       </main>
     </div>

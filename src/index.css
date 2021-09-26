@@ -3,11 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: montserrat, sans-serif;
 }
-
 .app {
   background-image: url("./backgrounds/cold-bg.jpg");
   background-position: center center;
@@ -15,7 +13,6 @@ body {
   background-size: cover;
   transition: 0.4s ease;
 }
-
 .app-warm {
   background-image: url("./backgrounds/warm-bg.jpg");
   background-position: center center;
@@ -23,7 +20,6 @@ body {
   background-size: cover;
   transition: 0.4s ease;
 }
-
 main {
   min-height: 100vh;
   background-image: linear-gradient(
@@ -33,12 +29,10 @@ main {
   );
   padding: 25px;
 }
-
 .search-box {
   width: 80%;
   margin: 15px auto;
 }
-
 .search-box .search-bar {
   display: block;
   width: 100%;
@@ -55,17 +49,14 @@ main {
   font-size: 20px;
   transition: 0.4s ease;
 }
-
 .search-box .search-bar::placeholder {
   color: #313131;
 }
-
 .search-box .search-bar:focus {
   background-color: white;
 }
-
 .wrapper-box {
-  width: 50%;
+  width: 75%;
   margin: 75px auto;
   padding: 25px 0;
   background-color: rgba(255, 255, 255, 0.3);
@@ -79,7 +70,6 @@ main {
   font-weight: bold;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
 }
-
 .location-box .date {
   padding-top: 10px;
   font-size: 20px;
@@ -89,7 +79,6 @@ main {
 .location-box .time-title {
   padding-top: 10px;
 }
-
 .weather-box {
   display: flex;
   justify-content: center;
@@ -98,25 +87,34 @@ main {
   font-size: 60px;
   font-weight: 900;
 }
-
 .weather-box .weather-icon {
   padding-left: 10px;
   display: flex;
   font-size: 80px;
 }
-
 .description-box {
   font-size: 40px;
   font-weight: 700;
   text-transform: capitalize;
   padding: 5px;
 }
-
 .description-text {
   margin-top: -15px;
 }
-
 .humidity {
   margin-top: 15px;
   font-size: 30px;
+}
+.error-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.error {
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+  background-color: rgb(216, 72, 72);
 }
